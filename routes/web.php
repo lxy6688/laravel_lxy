@@ -97,6 +97,14 @@ Route::prefix('model')->group(function(){
     Route::get('update',"ModelController@update");
     Route::get('delete',"ModelController@delete");
 });
+
+/**
+ *  表单验证路由示例
+ */
+Route::prefix('validation')->group(function(){
+    Route::get('create',"ValidationController@create");
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

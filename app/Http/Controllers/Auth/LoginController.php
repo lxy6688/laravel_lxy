@@ -37,12 +37,4 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
-
-    /**
-     * 根据逻辑判断自定义跳转链接
-     */
-    public function redirectPath()
-    {
-
-    }
 }
