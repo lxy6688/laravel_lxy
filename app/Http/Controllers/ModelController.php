@@ -143,6 +143,6 @@ class ModelController extends Controller
         $articleModel->where('id',$id)->restore();  //返回恢复的行数
 
         //如果要彻底删除
-        dump($articleModel->where('id',$id)->forceDelete());    //返回删除的行数
+        dump($articleModel->where('id',$id)->forceDelete());
     }
 }

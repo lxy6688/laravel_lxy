@@ -97,3 +97,6 @@ Route::prefix('model')->group(function(){
     Route::get('update',"ModelController@update");
     Route::get('delete',"ModelController@delete");
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

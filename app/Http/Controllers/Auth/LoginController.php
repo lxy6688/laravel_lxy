@@ -22,6 +22,7 @@ class LoginController extends Controller
 
     /**
      * Where to redirect users after login.
+     *登录成功后,跳转到 /home 路由, 可以自定义到其他的路由页
      *
      * @var string
      */
@@ -35,5 +36,13 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
+    }
+
+    /**
+     * 根据逻辑判断自定义跳转链接
+     */
+    public function redirectPath()
+    {
+
     }
 }
